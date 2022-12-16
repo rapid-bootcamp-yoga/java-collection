@@ -1,4 +1,4 @@
-package IterableCollection;
+package model;
 
 import java.util.List;
 

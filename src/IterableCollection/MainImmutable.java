@@ -1,6 +1,7 @@
 package IterableCollection;
 
-import java.lang.reflect.Array;
+import model.Person;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
