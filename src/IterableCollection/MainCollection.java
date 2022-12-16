@@ -12,10 +12,24 @@ public class MainCollection {
         names.add("umi");
         names.addAll(List.of("Sri", "Kezia", "Dina", "Tiyo"));
 
+
         // loop data
+        System.out.println("collection names Before ");
         for (String name: names){
             System.out.println(name);
         }
+        System.out.println(names.contains("Richi"));
+
+        names.remove("Richi");
+        names.removeAll(Arrays.asList("Dina", "Tiyo"));
+        System.out.println("collection names After");
+
+        for (String name: names){
+            System.out.println(name);
+        }
+        System.out.println(names.contains("Richi"));
+
+        System.out.println(" ");
 
         Collection<Person> persons = new ArrayList<>();
         persons.add(new Person(1, "Yoga", "Depok"));
@@ -30,6 +44,17 @@ public class MainCollection {
         for (Person person: persons){
             System.out.println(person);
         }
+
+        System.out.println(" ");
+        System.out.println("Setelah di remove");
+
+//        persons.remove(Person(3, "Densa", "Medan"));
+//        persons.removeAll()
+        for (Person person: persons){
+            System.out.println(person);
+        }
+
+
 
     }
 }
